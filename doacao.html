@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#164e43">
+  <meta name="description" content="Registre uma doação para uma campanha social das Lokas MC.">
+  <title>Registro de Doação | ConectaONG</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="ConectaONG, página inicial">
+        <span class="brand-mark" aria-hidden="true">C</span>
+        <span>Conecta<span class="brand-accent">ONG</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="index.html">Campanhas</a>
+        <a href="doacao.html" aria-current="page">Doações</a>
+        <a href="voluntarios.html">Voluntários</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell form-page" id="conteudo">
+    <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Voltar para campanhas</a>
+    <section class="page-heading form-heading">
+      <div>
+        <p class="eyebrow">Faça parte da mudança</p>
+        <h1>Registro de Doação</h1>
+        <p class="page-intro">Registre os itens que você está doando para a campanha.</p>
+      </div>
+    </section>
+
+    <section class="form-card" aria-labelledby="donation-campaign">
+      <div class="selected-campaign">
+        <span class="campaign-mini-icon" aria-hidden="true">♡</span>
+        <div>
+          <span class="field-caption">Campanha selecionada</span>
+          <h2 id="donation-campaign">Natal Solidário 2026</h2>
+        </div>
+        <span class="status-badge"><span class="status-dot" aria-hidden="true"></span>Ativa</span>
+      </div>
+
+      <div class="form-divider"></div>
+      <form id="donation-form" novalidate>
+        <div class="form-grid">
+          <div class="field field-full">
+            <label for="donation-item">Item doado</label>
+            <input id="donation-item" name="item" type="text" autocomplete="off" placeholder="Ex.: brinquedos" required>
+          </div>
+          <div class="field">
+            <label for="donation-quantity">Quantidade</label>
+            <input id="donation-quantity" name="quantity" type="number" min="1" step="any" inputmode="decimal" placeholder="Ex.: 3" required>
+            <span class="field-hint">Informe uma quantidade igual ou maior que 1.</span>
+          </div>
+          <div class="field">
+            <label for="donation-date">Data da doação</label>
+            <input id="donation-date" name="date" type="date" required>
+          </div>
+        </div>
+        <div class="form-feedback" data-feedback="donation" role="status" aria-live="polite" tabindex="-1" hidden></div>
+        <div class="form-actions">
+          <button class="button button-primary" type="submit">Registrar Doação</button>
+          <a class="button button-quiet" href="index.html">Cancelar</a>
+        </div>
+      </form>
+    </section>
+    <p class="privacy-note"><span aria-hidden="true">i</span> Seus dados são usados apenas para organizar esta ação social.</p>
+  </main>
+
+  <footer class="site-footer">
+    <p>ConectaONG <span aria-hidden="true">·</span> Feito para aproximar pessoas e boas causas.</p>
+  </footer>
+</body>
+</html>

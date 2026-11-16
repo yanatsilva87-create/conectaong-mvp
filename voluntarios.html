@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#164e43">
+  <meta name="description" content="Cadastre-se como voluntário nas ações sociais das Lokas MC.">
+  <title>Voluntários | ConectaONG</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="ConectaONG, página inicial">
+        <span class="brand-mark" aria-hidden="true">C</span>
+        <span>Conecta<span class="brand-accent">ONG</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="index.html">Campanhas</a>
+        <a href="doacao.html">Doações</a>
+        <a href="voluntarios.html" aria-current="page">Voluntários</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell form-page" id="conteudo">
+    <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Voltar para campanhas</a>
+    <section class="page-heading form-heading">
+      <div>
+        <p class="eyebrow">Sua presença faz diferença</p>
+        <h1>Voluntários</h1>
+        <p class="page-intro">Conte com a gente para transformar disposição em impacto positivo.</p>
+      </div>
+    </section>
+
+    <div class="volunteer-layout">
+      <section class="form-card volunteer-form-card" aria-labelledby="volunteer-form-title">
+        <div class="card-heading">
+          <span class="card-heading-icon" aria-hidden="true">✳</span>
+          <div>
+            <h2 id="volunteer-form-title">Quero ser voluntário</h2>
+            <p>Preencha seus dados para participar.</p>
+          </div>
+        </div>
+        <form id="volunteer-form" novalidate>
+          <div class="form-grid">
+            <div class="field field-full">
+              <label for="volunteer-name">Nome</label>
+              <input id="volunteer-name" name="name" type="text" autocomplete="name" placeholder="Como podemos chamar você?" required>
+            </div>
+            <div class="field">
+              <label for="volunteer-email">E-mail</label>
+              <input id="volunteer-email" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required>
+            </div>
+            <div class="field">
+              <label for="volunteer-phone">Telefone <span class="optional">(opcional)</span></label>
+              <input id="volunteer-phone" name="phone" type="tel" autocomplete="tel" placeholder="(00) 00000-0000">
+            </div>
+            <div class="field field-full">
+              <label for="volunteer-availability">Disponibilidade</label>
+              <select id="volunteer-availability" name="availability" required>
+                <option value="">Selecione sua disponibilidade</option>
+                <option value="Durante a semana">Durante a semana</option>
+                <option value="Fins de semana">Fins de semana</option>
+                <option value="Flexível">Flexível</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-feedback" data-feedback="volunteer" role="status" aria-live="polite" tabindex="-1" hidden></div>
+          <div class="form-actions">
+            <button class="button button-primary" type="submit">Cadastrar voluntário</button>
+          </div>
+        </form>
+      </section>
+
+      <aside class="volunteer-list-card" aria-labelledby="volunteer-list-title">
+        <div class="list-heading">
+          <div>
+            <p class="eyebrow">Nossa comunidade</p>
+            <h2 id="volunteer-list-title">Quem já chegou junto</h2>
+          </div>
+          <span class="count-pill" data-volunteer-count>3 pessoas</span>
+        </div>
+        <ul class="volunteer-list" id="volunteer-list">
+          <li class="volunteer-person">
+            <span class="avatar avatar-green" aria-hidden="true">V1</span>
+            <span class="volunteer-person-info"><strong>Pessoa voluntária 01</strong><span>Fins de semana</span></span>
+            <span class="person-check" aria-label="Cadastrada">✓</span>
+          </li>
+          <li class="volunteer-person">
+            <span class="avatar avatar-blue" aria-hidden="true">V2</span>
+            <span class="volunteer-person-info"><strong>Pessoa voluntária 02</strong><span>Flexível</span></span>
+            <span class="person-check" aria-label="Cadastrada">✓</span>
+          </li>
+          <li class="volunteer-person">
+            <span class="avatar avatar-gold" aria-hidden="true">V3</span>
+            <span class="volunteer-person-info"><strong>Pessoa voluntária 03</strong><span>Durante a semana</span></span>
+            <span class="person-check" aria-label="Cadastrada">✓</span>
+          </li>
+        </ul>
+        <p class="list-note">Junte-se a quem já está construindo essa corrente do bem.</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>ConectaONG <span aria-hidden="true">·</span> Feito para aproximar pessoas e boas causas.</p>
+  </footer>
+</body>
+</html>
