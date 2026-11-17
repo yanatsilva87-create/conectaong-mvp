@@ -119,6 +119,7 @@ if (volunteerForm) {
     volunteerCount.textContent = `${total} ${total === 1 ? "pessoa" : "pessoas"}`;
 
     showFeedback(volunteerFeedback, "Voluntário cadastrado com sucesso.", "success");
+    volunteerFeedback.setAttribute("role", "status");
     volunteerForm.reset();
   });
 }
