@@ -140,6 +140,7 @@ if (newCampaignButton) {
   newCampaignButton.addEventListener("click", () => {
     campaignFeedback.textContent = "O cadastro de novas campanhas não está disponível nesta versão do protótipo.";
     campaignFeedback.hidden = false;
+    campaignFeedback.setAttribute("role", "status");
     campaignFeedback.focus();
   });
   campaignFeedback?.setAttribute("tabindex", "-1");
