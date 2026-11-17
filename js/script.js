@@ -53,6 +53,8 @@ if (donationForm) {
     }
 
     showFeedback(donationFeedback, "Doação registrada com sucesso.", "success");
+    donationForm.reset();
+    itemField.focus();
   });
 }
 
