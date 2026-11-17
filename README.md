@@ -38,3 +38,10 @@ O desenvolvimento utiliza Git e GitHub para registrar a evolução do MVP por me
 ## Projeto acadêmico
 
 Projeto desenvolvido na disciplina de Projeto de Software, na etapa de Execução e Evidências do Projeto de Software.
+## Melhorias implementadas
+
+- Validação dos campos obrigatórios nos formulários.
+- Mensagens de sucesso e erro para orientar o usuário.
+- Limpeza automática do formulário após o registro de uma doação.
+- Retorno do foco ao primeiro campo após a conclusão do cadastro.
+- Recursos de acessibilidade com uso de atributos ARIA.
