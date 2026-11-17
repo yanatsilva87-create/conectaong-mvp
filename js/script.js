@@ -54,6 +54,7 @@ if (donationForm) {
 
     showFeedback(donationFeedback, "Doação registrada com sucesso.", "success");
     donationForm.reset();
+    donationFeedback.setAttribute("role", "status");
     itemField.focus();
   });
 }
