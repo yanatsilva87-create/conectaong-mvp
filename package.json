@@ -1,0 +1,26 @@
+{
+  "name": "conectaong",
+  "version": "1.0.0",
+  "description": "O ConectaONG é um MVP desenvolvido com o objetivo de apoiar a organização e divulgação de ações sociais da comunidade, facilitando o acesso às informações sobre campanhas, doações e oportunidades de voluntariado.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanatsilva87-create/conectaong-mvp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/yanatsilva87-create/conectaong-mvp/issues"
+  },
+  "homepage": "https://github.com/yanatsilva87-create/conectaong-mvp#readme",
+  "devDependencies": {
+    "@vitest/coverage-v8": "^5.1.0",
+    "jsdom": "^31.0.1",
+    "vitest": "^5.1.0"
+  }
+}
